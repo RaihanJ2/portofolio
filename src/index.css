@@ -1,0 +1,107 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --main-color: #e85830;
+
+  /* text colors */
+  --text-white: #f3f4f2;
+  --text-light-gray: #717375;
+  --text-x-dark-gray: hsl(0, 0%, 10%);
+  --text-dark-gray: hsl(0, 0%, 20%);
+
+  /* bg colors */
+  --body-bg-color: #231718;
+  --bg-color: hsl(var(--hue), 60%, 96%);
+  --bg-white: hsl(0, 0%, 100%);
+
+  /* border color */
+  --border-color: #937164;
+
+  /* shadow */
+  --shadow: 0 0 10pc hsla(var(--hue), 57%, 63%, 0.3);
+  --focus-shadow: 0 0 10px hsla(var(--hue), 57%, 63%, 0.6);
+
+  /* font size */
+  --fs-4xl: 50px;
+  --fs-3xl: 35px;
+  --fs-2xl: 25px;
+  --fs-xl: 20px;
+  --fs-lg: 18px;
+  --fs-md: 16px;
+  --fs-sm: 14px;
+}
+
+@media (max-width: 991px) {
+  /* # variables */
+  :root {
+    --fs-4xl: 42px;
+    --fs-3xl: 31px;
+    --fs-2xl: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* # variables */
+  :root {
+    --fs-4xl: 35px;
+    --fs-3xl: 26px;
+    --fs-2xl: 22px;
+    --fs-xl: 18px;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 300;
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: var(--fs-md);
+  line-height: 1.5;
+  color: var(--text-white);
+  background-color: var(--body-bg-color);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.32;
+}
+
+::selection {
+  color: var(--text-white);
+  background-color: var(--main-color);
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--body-bg-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}

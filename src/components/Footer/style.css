@@ -1,0 +1,37 @@
+.footer {
+  padding: 30px;
+  background-color: var(--main-color);
+  text-align: center;
+}
+
+.footer h3 {
+  color: var(--text-white);
+  font-size: var(--fs-2xl);
+  margin: 0 0 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.footer .social-links a {
+  height: 40px;
+  width: 40px;
+  display: inline-flex;
+  background-color: var(--bg-white);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 4px;
+  border: 1px solid transparent;
+  transition: all 0.5s ease;
+}
+.footer .social-links a:hover {
+  background-color: transparent;
+  color: var(--text-white);
+  border-color: initial;
+}
+
+@media (max-width: 575px) {
+  .footer {
+    padding: 20px;
+  }
+}
