@@ -10,8 +10,8 @@ import ContainerLayout from "../Layout/ContainerLayout";
 
 import "./style.css";
 
-function Services() {
-  const DATA_SERVICES = [
+function Skills() {
+  const DATA_SKILLS = [
     {
       name: "Javascript",
       img: js,
@@ -44,7 +44,7 @@ function Services() {
     },
   ];
   return (
-    <section className="services section-padding" id="services">
+    <section className="skills section-padding" id="skills">
       <ContainerLayout>
         <SectionTitle title="Skills" subTitle="IT Skills that i comprehend" />
         <Grid
@@ -52,17 +52,17 @@ function Services() {
             gridTemplateColumns: "repeat(10, 1fr)",
           }}
         >
-          {DATA_SERVICES.map((service) => (
+          {DATA_SKILLS.map((skill) => (
             <div
-              className="services-item"
+              className="skills-item"
               data-aos="flip-left"
-              data-aos-delay={service.aosDelay}
-              key={service.name}
+              data-aos-delay={skill.aosDelay}
+              key={skill.name}
             >
               <div className="img-box">
-                <img src={service.img} alt={service.name} />
+                <img src={skill.img} alt={skill.name} />
               </div>
-              <h3>{service.name}</h3>
+              <h3>{skill.name}</h3>
             </div>
           ))}
         </Grid>
@@ -70,4 +70,4 @@ function Services() {
     </section>
   );
 }
-export default Services;
+export default Skills;

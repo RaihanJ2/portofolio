@@ -1,0 +1,57 @@
+/* Update this in your App.css or create a themes.css file */
+
+/* Dark mode (default) - keeping your original dark theme */
+:root {
+  --main-color: #e85830;
+  --text-white: #f3f4f2;
+  --text-light-gray: #717375;
+  --text-x-dark-gray: hsl(0, 0%, 10%);
+  --text-dark-gray: hsl(0, 0%, 20%);
+  --body-bg-color: #231718;
+  --bg-color: hsl(var(--hue), 60%, 96%);
+  --bg-white: hsl(0, 0%, 100%);
+  --border-color: #937164;
+}
+
+/* Light mode - darker than before */
+body.light {
+  --body-bg-color: #2c3e50; /* Darker blue-gray background */
+  --bg-color: #34495e; /* Slightly lighter for content areas */
+  --text-white: #ecf0f1; /* Light text for good contrast */
+  --text-dark-gray: #bdc3c7; /* Lighter gray text */
+  --text-light-gray: #95a5a6; /* Medium gray text */
+  --border-color: #7f8c8d; /* Border color that works with the darker theme */
+}
+
+/* Ensure all buttons have light text regardless of theme */
+button {
+  color: #f3f4f2 !important; /* Force light text color */
+}
+
+button a {
+  color: #f3f4f2 !important; /* Force light text color for links in buttons */
+}
+
+/* Make sure button hover states maintain readable text */
+button:hover,
+button a:hover {
+  color: #f3f4f2 !important;
+}
+
+/* For the project links in the Projects component */
+.project-links a {
+  color: #f3f4f2 !important;
+}
+
+.project-links a:hover {
+  color: #f3f4f2 !important;
+  border: 1px solid var(--main-color);
+}
+
+/* Update styles for light mode active buttons (like in the project filters) */
+body.light .projects-filter button.active,
+body.light .projects-filter button:hover {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+  color: #f3f4f2 !important;
+}

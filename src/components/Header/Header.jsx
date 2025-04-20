@@ -1,10 +1,11 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./style.css";
 import ContainerLayout from "../Layout/ContainerLayout";
 import PropTypes from "prop-types";
 
-const Header = (props) => {
+const Header = ({ darkMode, toggleDarkMode }) => {
   const headerRef = useRef(null);
+  const [isTransform, setIsTransform] = useState(false);
 
   useEffect(() => {
     const headerBgFunc = () => {
@@ -53,9 +54,15 @@ const Header = (props) => {
       });
     };
   }, []);
-
+  const handleToggleClick = () => {
+    setIsTransform(true);
+    toggleDarkMode();
+    setTimeout(() => {
+      setIsTransform(false);
+    }, 600);
+  };
   return (
-    <div className={`header ${props.darkMode ? "dark" : ""}`} ref={headerRef}>
+    <div className={`header ${darkMode ? "dark" : ""}`} ref={headerRef}>
       <ContainerLayout
         style={{
           display: "flex",
@@ -63,32 +70,45 @@ const Header = (props) => {
           justifyContent: "space-between",
         }}
       >
-        <div className="logo">
-          <p className="logo-image"></p>
-        </div>
-        <button
-          className="nav-toggler js-nav-toggler"
-          data-aos="fade-down"
-          data-aos-duration="1000"
+        <div
+          onClick={handleToggleClick}
+          className={`logo toggle-mode ${isTransform ? "popping" : ""}`}
         >
-          <span></span>
-        </button>
-        <nav className="nav js-nav">
-          <ul>
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#services">services</a>
-            </li>
-            <li>
-              <a href="#contact">contact</a>
-            </li>
-          </ul>
-        </nav>
+          <p className="logo-image toggle-mode"></p>
+        </div>
+
+        <div
+          className="header-right"
+          style={{ display: "flex", alignItems: "center" }}
+        >
+          <button
+            className="nav-toggler js-nav-toggler"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <span></span>
+          </button>
+
+          <nav className="nav js-nav">
+            <ul>
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#skills">Skills</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </ContainerLayout>
     </div>
   );

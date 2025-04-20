@@ -28,6 +28,7 @@ function FirstScreen() {
               data-aos-duration="1000"
               data-aos-delay="300"
               href="#about"
+              className=""
             >
               know more
             </ButtonLink>

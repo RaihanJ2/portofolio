@@ -4,20 +4,28 @@ import AOS from "aos";
 import Header from "./components/Header/Header";
 import FirstScreen from "./components/FirstScreen/FirstScreen";
 import AboutUs from "./components/AboutUs/AboutUs";
-import Services from "./components/Services/Services";
 
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 
-import "./App.css";
 import "aos/dist/aos.css";
 import "@fortawesome/fontawesome-free/css/all.css";
+import Projects from "./components/Projects/Projects";
+import Skills from "./components/Skills/Skills";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
   function toggleDarkMode() {
     setDarkMode((prevMode) => !prevMode);
   }
+
+  useEffect(() => {
+    if (!darkMode) {
+      document.body.classList.add("light");
+    } else {
+      document.body.classList.remove("light");
+    }
+  }, [darkMode]);
   useEffect(() => {
     AOS.init();
   }, []);
@@ -27,7 +35,8 @@ function App() {
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <FirstScreen />
       <AboutUs />
-      <Services />
+      <Skills />
+      <Projects />
       <Contact />
       <Footer />
     </>

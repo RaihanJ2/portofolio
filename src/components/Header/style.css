@@ -69,6 +69,30 @@
   transform: scaleY(0.9);
   letter-spacing: 3px;
 }
+/* Replace the spin animation with a pop animation */
+@keyframes pop {
+  0% {
+    transform: scale(0.3);
+  }
+  50% {
+    transform: scale(0.4); /* Scale up by about 33% at midpoint */
+  }
+  100% {
+    transform: scale(0.3);
+  }
+}
+
+.logo.toggle-mode {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Replace the spinning class with popping */
+.logo.toggle-mode.popping .logo-image {
+  animation: pop 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28); /* Use elastic-like bezier curve for bounce effect */
+}
+
+/* Update the logo-image transitions */
 .logo-image {
   box-shadow: 0 0 0 1em var(--main-color), 0 1em 0 1em var(--main-color),
     -2.5em 1.5em 0 0.5em var(--main-color),
@@ -91,6 +115,7 @@
   height: 1em;
   overflow: hidden;
   transform: scale(0.3);
+  transition: box-shadow 0.3s ease, background 0.3s ease; /* Smooth transition for color changes */
 }
 .logo span {
   font-size: 12px;
@@ -203,4 +228,32 @@
   .nav li + li {
     border-top: 1px solid var(--border-color);
   }
+}
+
+.theme-toggle {
+  background-color: transparent;
+  color: var(--main-color);
+  border: none;
+  font-size: var(--fs-lg);
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: rotate(30deg);
+  background-color: transparent;
+}
+
+.dark {
+  --bg-color: var(--body-bg-color);
+  --text-color: var(--text-white);
+}
+
+body.light {
+  --body-bg-color: #f5f5f5;
+  --bg-color: #ffffff;
+  --text-white: #333333;
+  --text-dark-gray: #666666;
+  --border-color: #dddddd;
 }
