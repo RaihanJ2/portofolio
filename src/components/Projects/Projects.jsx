@@ -4,6 +4,7 @@ import SectionTitle from "../Layout/SectionTitle";
 import Grid from "../Layout/Grid";
 import "./Projects.css";
 import colorv from "../../assets/img/project/colorv.png";
+import kshop from "../../assets/img/project/k-shop.png";
 
 function Projects() {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -11,24 +12,24 @@ function Projects() {
   const projectsData = [
     {
       id: 1,
-      title: "E-commerce Website",
+      title: "ColorV",
       category: "web",
       image: colorv,
       description:
-        "A fully responsive e-commerce platform built with React and Node.js",
-      demoLink: "#",
+        "ColorV generates color palettes either randomly or based on an image, helping developers effortlessly create well-balanced and visually appealing color schemes.",
+      demoLink: "https://colorv.vercel.app/",
       codeLink: "https://github.com/RaihanJ2/colorv",
       aosDelay: 0,
     },
     {
       id: 2,
-      title: "Task Management App",
-      category: "app",
-      image: "/api/placeholder/400/320",
+      title: "K-Shop",
+      category: "Ecommerce",
+      image: kshop,
       description:
-        "A task management application with drag-and-drop functionality",
-      demoLink: "#",
-      codeLink: "#",
+        "K-Shop is a fully functional e-commerce website built with React and Node.js, featuring user authentication, product management, and a secure payment gateway.",
+      demoLink: "https://k-shop-rouge.vercel.app/",
+      codeLink: "https://github.com/RaihanJ2/K-Shop",
       aosDelay: 100,
     },
     {
