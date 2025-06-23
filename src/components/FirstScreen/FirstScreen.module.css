@@ -23,8 +23,8 @@
   --s: 50px;
   border: 8px solid var(--main-color);
   padding: 10px;
-  height: 615px;
-  width: 300px;
+  height: 400px;
+  width: 480px;
   background: transparent content-box;
   mask: conic-gradient(#000 0 0) content-box,
     conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0 /

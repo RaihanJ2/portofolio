@@ -1,3 +1,10 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10%;
+}
 .about .section-title {
   text-align: left;
   margin: 0 0 15px;

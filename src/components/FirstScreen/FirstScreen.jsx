@@ -1,5 +1,5 @@
 import style from "./FirstScreen.module.css";
-import homeImg from "../../assets/img/home-img1.png";
+import homeImg from "../../assets/img/profile.png";
 
 import Grid from "../Layout/Grid";
 import ContainerLayout from "../Layout/ContainerLayout";
