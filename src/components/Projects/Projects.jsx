@@ -1,13 +1,15 @@
-import { useState } from "react";
+// import { useState } from "react";
 import ContainerLayout from "../Layout/ContainerLayout";
 import SectionTitle from "../Layout/SectionTitle";
 import Grid from "../Layout/Grid";
 import "./Projects.css";
 import colorv from "../../assets/img/project/colorv.png";
 import kshop from "../../assets/img/project/k-shop.png";
+import chatterbox from "../../assets/img/project/chatterbox.png";
+import { useState } from "react";
 
 function Projects() {
-  const [activeFilter, setActiveFilter] = useState("all");
+  const [activeFilter] = useState("all");
 
   const projectsData = [
     {
@@ -34,42 +36,12 @@ function Projects() {
     },
     {
       id: 3,
-      title: "Portfolio Design",
-      category: "design",
-      image: "/api/placeholder/400/320",
+      title: "Chatterbox",
+      category: "AIchatbot",
+      image: chatterbox,
       description: "Modern portfolio design with responsive layouts",
-      demoLink: "#",
-      codeLink: "#",
-      aosDelay: 200,
-    },
-    {
-      id: 4,
-      title: "Weather Dashboard",
-      category: "web",
-      image: "/api/placeholder/400/320",
-      description: "Weather forecasting app that uses external API data",
-      demoLink: "#",
-      codeLink: "#",
-      aosDelay: 0,
-    },
-    {
-      id: 5,
-      title: "Mobile Game UI",
-      category: "design",
-      image: "/api/placeholder/400/320",
-      description: "UI/UX design for a mobile game application",
-      demoLink: "#",
-      codeLink: "#",
-      aosDelay: 100,
-    },
-    {
-      id: 6,
-      title: "Social Media App",
-      category: "app",
-      image: "/api/placeholder/400/320",
-      description: "A social networking application with messaging features",
-      demoLink: "#",
-      codeLink: "#",
+      demoLink: "https://chatterbox-ebon-theta.vercel.app/",
+      codeLink: "https://github.com/RaihanJ2/chatterbox",
       aosDelay: 200,
     },
   ];
@@ -87,32 +59,7 @@ function Projects() {
           title="My Projects"
           subTitle="Check out some of my work"
         />
-        <div className="projects-filter" data-aos="fade-up">
-          <button
-            className={activeFilter === "all" ? "active" : ""}
-            onClick={() => setActiveFilter("all")}
-          >
-            All
-          </button>
-          <button
-            className={activeFilter === "web" ? "active" : ""}
-            onClick={() => setActiveFilter("web")}
-          >
-            Web
-          </button>
-          <button
-            className={activeFilter === "app" ? "active" : ""}
-            onClick={() => setActiveFilter("app")}
-          >
-            Apps
-          </button>
-          <button
-            className={activeFilter === "design" ? "active" : ""}
-            onClick={() => setActiveFilter("design")}
-          >
-            Design
-          </button>
-        </div>
+        <div className="projects-filter" data-aos="fade-up"></div>
 
         <Grid>
           {filteredProjects.map((project) => (

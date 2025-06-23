@@ -12,25 +12,26 @@ function FirstScreen() {
         <Grid>
           <div className={style.homeText}>
             <h1 data-aos="fade-left" data-aos-duration="1000">
-              Hello! I&apos;m John Doe <span>Web Developer</span>
+              👋 Hello! I&apos;m Raihan Jan&apos;smaillendra{" "}
+              <span>Web Developer</span>
             </h1>
             <p
               data-aos="fade-right"
               data-aos-duration="1000"
               data-aos-delay="150"
+              className={style.textDesc}
             >
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
-              ipsum tempora minima voluptatibus facere et saepe quaerat nostrum
-              pariatur ducimus!
+              I&apos;m a web developer who enjoys turning ideas into real,
+              user-friendly digital experiences. When I&apos;m not coding,
+              you&apos;ll find me exploring new tech or diving into comics.
             </p>
             <ButtonLink
               data-aos="zoom-in"
               data-aos-duration="1000"
               data-aos-delay="300"
               href="#about"
-              className=""
             >
-              know more
+              Know More
             </ButtonLink>
           </div>
           <div className={style.homeImg}>

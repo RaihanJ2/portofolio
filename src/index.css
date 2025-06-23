@@ -33,7 +33,6 @@
 }
 
 @media (max-width: 991px) {
-  /* # variables */
   :root {
     --fs-4xl: 42px;
     --fs-3xl: 31px;
@@ -42,7 +41,6 @@
 }
 
 @media (max-width: 767px) {
-  /* # variables */
   :root {
     --fs-4xl: 35px;
     --fs-3xl: 26px;

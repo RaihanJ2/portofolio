@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <ContainerLayout>
-        <h3>follow us</h3>
+        <h3>follow me</h3>
         <div className="social-links">
           <a href="#" title="facebook">
             <i className="fab fa-facebook"></i>

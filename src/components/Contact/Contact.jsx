@@ -33,7 +33,6 @@ function Contact() {
     e.preventDefault();
     setStatus({ submitting: true, success: false, error: false, message: "" });
 
-    // You need to replace these with your actual EmailJS service, template and user IDs
     emailjs
       .sendForm(
         import.meta.env.VITE_SERVICE_ID,
@@ -50,7 +49,6 @@ function Contact() {
             error: false,
             message: "Message sent successfully!",
           });
-          // Reset form
           setFormData({
             name: "",
             email: "",

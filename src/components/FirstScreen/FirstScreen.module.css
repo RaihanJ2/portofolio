@@ -20,7 +20,7 @@
 }
 
 .homeImg .container {
-  --s: 50px; /* size of the corners */
+  --s: 50px;
   border: 8px solid var(--main-color);
   padding: 10px;
   height: 615px;
@@ -37,6 +37,10 @@
 .homeImg img {
   max-width: 400px;
   margin: auto;
+}
+
+.textDesc {
+  text-align: justify;
 }
 
 @media (max-width: 991px) {
