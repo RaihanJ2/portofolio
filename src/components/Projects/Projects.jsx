@@ -6,6 +6,7 @@ import "./Projects.css";
 import colorv from "../../assets/img/project/colorv.png";
 import kshop from "../../assets/img/project/k-shop.png";
 import chatterbox from "../../assets/img/project/chatterbox.png";
+import docsum from "../../assets/img/project/docsum.png";
 import { useState } from "react";
 
 function Projects() {
@@ -39,10 +40,22 @@ function Projects() {
       title: "Chatterbox",
       category: "AIchatbot",
       image: chatterbox,
-      description: "Modern portfolio design with responsive layouts",
+      description:
+        "AIchatbot is a cutting-edge AI-powered chatbot that provides instant responses and assistance, enhancing user engagement and support.",
       demoLink: "https://chatterbox-ebon-theta.vercel.app/",
       codeLink: "https://github.com/RaihanJ2/chatterbox",
       aosDelay: 200,
+    },
+    {
+      id: 3,
+      title: "DocSum",
+      category: "AIchatbot",
+      image: docsum,
+      description:
+        "Transform lengthy documents into concise, intelligent summaries powered by advanced AI technology",
+      demoLink: "https://docsum-delta.vercel.app/",
+      codeLink: "https://github.com/RaihanJ2/docsum",
+      aosDelay: 250,
     },
   ];
 
