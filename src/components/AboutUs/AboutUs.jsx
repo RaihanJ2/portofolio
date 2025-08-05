@@ -5,7 +5,7 @@ function AboutUs() {
   return (
     <section className={style.about} id="about">
       <div className={style.aboutText}>
-        <SectionTitle title="about us" subTitle="Web Developer" />
+        <SectionTitle title="about me" subTitle="Web Developer" />
         <p data-aos="fade-up" data-aos-duration="600">
           Hello! I am Raihan Jan&apos;smaillendra An enthusiastic full-stack
           developer graduated in Software Engineering from Esa Unggul
