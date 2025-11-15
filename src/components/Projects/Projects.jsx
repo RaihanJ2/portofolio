@@ -7,6 +7,8 @@ import colorv from "../../assets/img/project/colorv.png";
 import kshop from "../../assets/img/project/k-shop.png";
 import chatterbox from "../../assets/img/project/chatterbox.png";
 import docsum from "../../assets/img/project/docsum.png";
+import postly from "../../assets/img/project/postly.png";
+import recca from "../../assets/img/project/recca.png";
 import { useState } from "react";
 
 function Projects() {
@@ -19,7 +21,7 @@ function Projects() {
       category: "web",
       image: colorv,
       description:
-        "ColorV generates color palettes either randomly or based on an image, helping developers effortlessly create well-balanced and visually appealing color schemes.",
+        "ColorV generates color palettes either randomly or from an uploaded image, helping developers create well-balanced and visually appealing color schemes.",
       demoLink: "https://colorv.vercel.app/",
       codeLink: "https://github.com/RaihanJ2/colorv",
       aosDelay: 0,
@@ -27,10 +29,10 @@ function Projects() {
     {
       id: 2,
       title: "HelloKids",
-      category: "Ecommerce",
+      category: "ecommerce",
       image: kshop,
       description:
-        "HelloKids is a fully functional e-commerce website built with React and Node.js, featuring user authentication, product management, and a secure payment gateway.",
+        "HelloKids is a fully functional e-commerce website built with React and Node.js, featuring authentication, product management, and secure payments.",
       demoLink: "https://hellokids.vercel.app/",
       codeLink: "https://github.com/RaihanJ2/e-commerce",
       aosDelay: 100,
@@ -41,21 +43,43 @@ function Projects() {
       category: "AIchatbot",
       image: chatterbox,
       description:
-        "AIchatbot is a cutting-edge AI-powered chatbot that provides instant responses and assistance, enhancing user engagement and support.",
+        "Chatterbox is an AI-powered chatbot that provides instant responses and smart assistance to enhance user engagement.",
       demoLink: "https://chatterbox-ebon-theta.vercel.app/",
       codeLink: "https://github.com/RaihanJ2/chatterbox",
       aosDelay: 200,
     },
     {
-      id: 3,
+      id: 4,
       title: "DocSum",
-      category: "AIchatbot",
+      category: "AIsummarizer",
       image: docsum,
       description:
-        "Transform lengthy documents into concise, intelligent summaries powered by advanced AI technology",
+        "DocSum transforms long documents into clear, concise summaries powered by advanced AI technology.",
       demoLink: "https://docsum-delta.vercel.app/",
       codeLink: "https://github.com/RaihanJ2/docsum",
       aosDelay: 250,
+    },
+    {
+      id: 5,
+      title: "Postly",
+      category: "fullstack",
+      image: postly, // make sure you imported the image
+      description:
+        "Postly is a full-stack, production-ready blogging platform featuring modern UI, secure multi-auth system, rich text editing, smart tagging, nested comments, and a scalable React + Express + MongoDB architecture.",
+      demoLink: "https://your-postly-live-demo-link.com", // update if available
+      codeLink: "https://github.com/yourusername/postly", // update if needed
+      aosDelay: 300,
+    },
+    {
+      id: 6,
+      title: "AI Face Recognition Attendance",
+      category: "AI/ComputerVision",
+      image: recca, // make sure to import your image
+      description:
+        "An AI-powered face recognition attendance system featuring zero-shot learning, real-time processing, offline-first architecture, privacy-first design, and a modern React + Flask + InsightFace stack.",
+      demoLink: "https://your-live-demo-link.com", // update if available
+      codeLink: "https://github.com/yourusername/face-recognition-attendance", // update this
+      aosDelay: 350,
     },
   ];
 
