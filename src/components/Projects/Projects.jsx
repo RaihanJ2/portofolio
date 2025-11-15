@@ -26,13 +26,13 @@ function Projects() {
     },
     {
       id: 2,
-      title: "K-Shop",
+      title: "HelloKids",
       category: "Ecommerce",
       image: kshop,
       description:
-        "K-Shop is a fully functional e-commerce website built with React and Node.js, featuring user authentication, product management, and a secure payment gateway.",
-      demoLink: "https://k-shop-rouge.vercel.app/",
-      codeLink: "https://github.com/RaihanJ2/K-Shop",
+        "HelloKids is a fully functional e-commerce website built with React and Node.js, featuring user authentication, product management, and a secure payment gateway.",
+      demoLink: "https://hellokids.vercel.app/",
+      codeLink: "https://github.com/RaihanJ2/e-commerce",
       aosDelay: 100,
     },
     {
