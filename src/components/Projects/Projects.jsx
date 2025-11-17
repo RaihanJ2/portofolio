@@ -63,22 +63,22 @@ function Projects() {
       id: 5,
       title: "Postly",
       category: "fullstack",
-      image: postly, // make sure you imported the image
+      image: postly,
       description:
         "Postly is a full-stack, production-ready blogging platform featuring modern UI, secure multi-auth system, rich text editing, smart tagging, nested comments, and a scalable React + Express + MongoDB architecture.",
-      demoLink: "https://your-postly-live-demo-link.com", // update if available
-      codeLink: "https://github.com/yourusername/postly", // update if needed
+      demoLink: "https://bulletin-board-kappa-blue.vercel.app/",
+      codeLink: "https://github.com/yourusername/postly",
       aosDelay: 300,
     },
     {
       id: 6,
       title: "AI Face Recognition Attendance",
       category: "AI/ComputerVision",
-      image: recca, // make sure to import your image
+      image: recca,
       description:
         "An AI-powered face recognition attendance system featuring zero-shot learning, real-time processing, offline-first architecture, privacy-first design, and a modern React + Flask + InsightFace stack.",
-      demoLink: "https://your-live-demo-link.com", // update if available
-      codeLink: "https://github.com/yourusername/face-recognition-attendance", // update this
+      demoLink: "",
+      codeLink: "https://github.com/RaihanAldy/Face_attendance_recognition",
       aosDelay: 350,
     },
   ];
